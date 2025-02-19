@@ -1,96 +1,59 @@
-{
-  "@context": {
-    "@language": "en-us",
-    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
-    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
-    "hashAlgorithm": "CIP100:hashAlgorithm",
-    "body": {
-      "@id": "CIP119:body",
-      "@context": {
-        "references": {
-          "@id": "CIP119:references",
-          "@container": "@set",
-          "@context": {
-            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
-            "Identity": "CIP119:IdentityReference",
-            "Link": "CIP119:LinkReference",
-            "Other": "CIP100:OtherReference",
-            "label": "CIP100:reference-label",
-            "uri": "CIP100:reference-uri",
-            "referenceHash": {
-              "@id": "CIP119:referenceHash",
-              "@context": {
-                "hashDigest": "CIP119:hashDigest",
-                "hashAlgorithm": "CIP100:hashAlgorithm"
-              }
-            }
-          }
-        },
-        "paymentAddress": "CIP119:paymentAddress",
-        "givenName": "CIP119:givenName",
-        "image": "CIP119:image",
-        "objectives": "CIP119:objectives",
-        "motivations": "CIP119:motivations",
-        "qualifications": "CIP119:qualifications",
-        "doNotList": "CIP119:doNotList"
-      }
-    },
-    "authors": {
-      "@id": "CIP100:authors",
-      "@container": "@set",
-      "@context": {
-        "name": "http://xmlns.com/foaf/0.1/name",
-        "witness": {
-          "@id": "CIP100:witness",
-          "@context": {
-            "witnessAlgorithm": "CIP100:witnessAlgorithm",
-            "publicKey": "CIP100:publicKey",
-            "signature": "CIP100:signature"
-          }
-        }
-      }
-    }
-  },
-  "authors": [],
-  "hashAlgorithm": {
-    "@value": "blake2b-256"
-  },
-  "body": {
-    "doNotList": false,
-    "givenName": {
-      "@value": "ADA_Labo"
-    },
-    "motivations": {
-      "@value": "DRepとして、カルダノの持続可能な分散型ガバナンスを構築します。 ADAプレホルダーとしての経験、SPOとしての経験、クリプト業界の情報発信者としての経験を活かし、グローバルにカルダノの価値を高める提案を評価し、投票します。As a DRep, you will build sustainable decentralized governance for Cardano. We will use our experience as an ADA preholder, SPO, and crypto industry informant to evaluate and vote on proposals that add value to Cardano globally."
-    },
-    "objectives": {
-      "@value": "15年の経営コンサルタント業のノウハウを活かし、既存の閉鎖的な経済から新しい透明性が高い経済へ移行しつつ持続可能な循環型社会の構築とカルダノの持続可能なエコシステムの発展に貢献します。With 15 years of management consulting expertise, we will contribute to the development of a sustainable circular society and a sustainable ecosystem in Cardano while transitioning from the existing closed economy to a new, more transparent economy."
-    },
-    "paymentAddress": {
-      "@value": "addr1qx0plkha3ymphzz8kejsrx4zfwx7xxav389k4vgqjje3ntljv2gr8m5apqmkmw2jqkp8pc02q66lqu9p0xwun4k6fgzsz8xu6y"
-    },
-    "qualifications": {
-      "@value": "ADA Laboは、カルダノADAホルダーとしての長期経験、ステークプール・オペレーターとしての4年間の経験で2つのプールを管理し8,000ブロックを生み出しました、金融トレーダーとしては30年、PCエンジニアとしては40年、独立してコンサルタント会社を15年間経営しました、現在はフリーランスでSPOの教育支援に従事しています。ADA_Labo has managed two pools and generated 8,000 blocks in his long term experience as a Cardano ADA holder, 4 years as a stake pool operator, 30 years as a financial trader, 40 years as a PC engineer, 15 years as an independent consultant firm I managed a consulting company for 15 years and currently work as a freelancer providing educational support to SPOs."
-    },
-    "references": [
-      {
-        "@type": "Link",
-        "label": {
-          "@value": "ADA Labo : Cardano network consultant"
-        },
-        "uri": {
-          "@value": "https://thc-room335.com"
-        }
-      },
-      {
-        "@type": "Identity",
-        "label": {
-          "@value": "SNS：X.com"
-        },
-        "uri": {
-          "@value": "https://x.com/funkyhiro2009"
-        }
-      }
-    ]
+@context	
+@language	"en-us"
+CIP100	"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#"
+CIP119	"https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#"
+hashAlgorithm	"CIP100:hashAlgorithm"
+body	
+@id	"CIP119:body"
+@context	
+references	
+@id	"CIP119:references"
+@container	"@set"
+@context	
+GovernanceMetadata	"CIP100:GovernanceMetadataReference"
+Identity	"CIP119:IdentityReference"
+Link	"CIP119:LinkReference"
+Other	"CIP100:OtherReference"
+label	"CIP100:reference-label"
+uri	"CIP100:reference-uri"
+referenceHash	
+@id	"CIP119:referenceHash"
+@context	
+hashDigest	"CIP119:hashDigest"
+hashAlgorithm	"CIP100:hashAlgorithm"
+paymentAddress	"CIP119:paymentAddress"
+givenName	"CIP119:givenName"
+image	"CIP119:image"
+objectives	"CIP119:objectives"
+motivations	"CIP119:motivations"
+qualifications	"CIP119:qualifications"
+doNotList	"CIP119:doNotList"
+authors	
+@id	"CIP100:authors"
+@container	"@set"
+@context	
+name	"http://xmlns.com/foaf/0.1/name"
+witness	
+@id	"CIP100:witness"
+@context	
+witnessAlgorithm	"CIP100:witnessAlgorithm"
+publicKey	"CIP100:publicKey"
+signature	"CIP100:signature"
+hashAlgorithm	"blake2b-256"
+body	
+givenName	"ADA_Labo"
+motivations	"15年の経営コンサルタント業のノウハウを活かし、既存の閉鎖的な経済から新しい透明性が高い経済へ移行しつつ持続可能な循環型社会の構築とカルダノの持続可能なエコシステムの発展に貢献します。With 15 years of management consulting expertise, we will contribute to the development of a sustainable circular society and a sustainable ecosystem in Cardano while transitioning from the existing closed economy to a new, more transparent economy."
+objectives	"DRepとして、カルダノの持続可能な分散型ガバナンスを構築します。 ADAプレホルダーとしての経験、SPOとしての経験、クリプト業界の情報発信者としての経験を活かし、グローバルにカルダノの価値を高める提案を評価し、投票します。As a DRep, you will build sustainable decentralized governance for Cardano. We will use our experience as an ADA preholder, SPO, and crypto industry informant to evaluate and vote on proposals that add value to Cardano globally."
+paymentAddress	"addr1qx0plkha3ymphzz8kejsrx4zfwx7xxav389k4vgqjje3ntljv2gr8m5apqmkmw2jqkp8pc02q66lqu9p0xwun4k6fgzsz8xu6y"
+qualifications	"ADA_Laboは、カルダノADAホルダーとしての長期経験、ステークプール・オペレーターとしての4年間の経験で2つのプールを管理し8,000ブロックを生み出しました、金融トレーダーとしては30年、PCエンジニアとしては40年、独立してコンサルタント会社を15年間経営しました、現在はフリーランスでSPOの教育支援に従事しています。ADA_Labo has managed two pools and generated 8,000 blocks in his long term experience as a Cardano ADA holder, 4 years as a stake pool operator, 30 years as a financial trader, 40 years as a PC engineer, 15 years as an independent consultant firm I managed a consulting company for 15 years and currently work as a freelancer providing educational support to SPOs."
+references	
+0	
+@type	"Link"
+label	"ADA Labo"
+uri	"https://thc-room335.com/"
+1	
+@type	"Identity"
+label	"SNS：X.com"
+uri	"https://x.com/funkyhiro2009"
   }
 }
